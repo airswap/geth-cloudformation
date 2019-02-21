@@ -30,12 +30,12 @@ Parameters:
     - i3.4xlarge
     - i3.8xlarge
     - i3.16xlarge
-    - cd5.large
-    - cd5.xlarge
-    - cd5.2xlarge
-    - cd5.4xlarge
-    - cd5.9xlarge
-    - cd5.18xlarge
+    - c5.large
+    - c5d.xlarge
+    - c5d.2xlarge
+    - c5d.4xlarge
+    - c5d.9xlarge
+    - c5d.18xlarge
     ConstraintDescription: must be a valid EC2 instance type.
   EtherscanAPIKey:
     Description: 'Etherscan API Key (found here: https://etherscan.io/apis)'
