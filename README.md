@@ -14,7 +14,7 @@ Installing Geth is easy. Running Geth at scale can be a headache. Setting up the
 * Automatic rotation of unhealthy nodes
 * Automatic health checking for syncing state
 * Custom VPC and subnet compatible
-* Bring your own Infura and Etherscan API keys
+* Bring your own Infura API keys
 * Proven instance types that will run Geth in production
 * Hardened Geth node for mass RPC queries
 * AWS best practices for infrastructure and security
@@ -32,9 +32,6 @@ The ARN string for the SSL certificate you want on the load balancer. This is us
 This field is optional.
 
 If you specify this field, port 80 access is automatically disabled for security. You will need to create a Route 53 record pointing to the load balancer with the correct DNS name.
-
-#### Etherscan API Key
-Prior to starting the stack, you need to register for an Etherscan API key. You can [use the instructions listed here](https://etherscan.io/apis) to create an account and get a new API key.
 
 #### Infura API Key
 An optional API key can be provided for Infura. This might result in less rate limiting and better quality of service with Infura when querying their nodes.

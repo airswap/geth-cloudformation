@@ -37,10 +37,6 @@ Parameters:
     - cd5.9xlarge
     - cd5.18xlarge
     ConstraintDescription: must be a valid EC2 instance type.
-  EtherscanAPIKey:
-    Description: 'Etherscan API Key (found here: https://etherscan.io/apis)'
-    ConstraintDescription: must be a valid Etherscan API Key
-    Type: String
   InfuraProjectID:
     Description: (Optional) Infura Project ID via your Infura Dashboard
     ConstraintDescription: must be a valid string
@@ -217,7 +213,7 @@ Resources:
                   var _ = require('lodash');
                   var app = express();
 
-                  var etherscan_url = "https://api.etherscan.io/api?module=proxy&action=eth_blockNumber&apikey=${EtherscanAPIKey}";
+                  var etherscan_url = "https://api.etherscan.io/api?module=proxy&action=eth_blockNumber";
                   var infura_url = "https://mainnet.infura.io/v3/${InfuraProjectID}";
 
                   app.get('/healthcheck', function (req, res) {
