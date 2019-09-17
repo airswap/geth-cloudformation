@@ -1,8 +1,16 @@
+# THIS REPO IS NO LONGER MAINTAINED
+
+As outlined in our speech at DevCon 4, AirSwap would make this repo public because we wanted to help the community. At the time, there were not many companies specializing in running Ethereum nodes as a service. That is no longer the case - there are many options now!
+
+Here are some Ethereum node providers that AirSwap uses:
+- **[Alchemy](https://alchemyapi.io/)**
+- [NodeSmith](https://nodesmith.io/)
+- [Infura](https://infura.io/)
+
+Try out one of those providers for your project! The repo will continue to exist if you need to reference it for architecture purposes.
+
 # geth-cloudformation
 The Airswap implementation of Geth clustering in a CloudFormation script
-
-### Want to give it a try?
-[![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=GethCluster&templateURL=https://s3.amazonaws.com/opensource.airswap.io/geth/cloudformation.yml)
 
 ## Features
 
